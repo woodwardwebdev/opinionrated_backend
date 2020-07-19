@@ -11,6 +11,7 @@ const Opinion_Question = new Schema(
     },
     answers: [],
     answeredBy: [],
+    votedOnBy: [],
     upvotes: Number,
     downvotes: Number,
   },

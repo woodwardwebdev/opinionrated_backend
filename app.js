@@ -148,6 +148,7 @@ app.get("/singlequestion/:id", cors(), function(req, res) {
 });
 
 app.post("/singlequestion/:id", cors(), function(req, res) {
+  console.log(req.body);
   Opinion_Question.findOneAndUpdate(
     { _id: req.body._id },
     {
